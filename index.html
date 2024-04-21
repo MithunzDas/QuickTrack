@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTrack - Time Tracking App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>QuickTrack</h1>
+        </header>
+        <nav>
+            <button onclick="showSection('track')">Track Time</button>
+            <button onclick="showSection('log')">Log Event</button>
+            <button onclick="showSection('logs')">View Logs</button>
+            <button onclick="showSection('summary')">Summary</button>
+        </nav>
+        <section id="track" class="section">
+            <h2>Track New Session</h2>
+            <input type="text" id="activityName" placeholder="What are you working on?" autofocus>
+            <button onclick="startTimer()">Start</button>
+            <button onclick="stopTimer()">Stop</button>
+            <div id="timer">00:00:00</div>
+        </section>
+        <section id="log" class="section" style="display:none;">
+            <h2>Log Past Event</h2>
+            <input type="text" id="manualActivityName" placeholder="Activity name">
+            <input type="datetime-local" id="startTime">
+            <input type="datetime-local" id="endTime">
+            <button onclick="logManualEvent()">Log Event</button>
+        </section>
+        <section id="logs" class="section" style="display:none;">
+            <h2>Logged Times</h2>
+            <ul id="logList"></ul>
+        </section>
+        <section id="summary" class="section" style="display:none;">
+            <h2>Weekly Summary</h2>
+            <canvas id="summaryChart"></canvas>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

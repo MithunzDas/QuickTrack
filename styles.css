@@ -1,0 +1,85 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #333;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav button {
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    opacity: 0.8;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="datetime-local"] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    background-color: #2200ff;
+}
+
+
+#timer {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+
+#logList button {
+    padding: 5px 10px;
+    background-color: #ff4d4d; /* Red color for delete button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logList button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    background-color: #2200ff;
+}
+
